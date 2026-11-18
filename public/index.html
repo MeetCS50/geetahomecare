@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Geeta Home Care – Professional Healthcare at Your Doorstep | Ahmedabad</title>
+<meta name="description" content="Geeta Home Care offers doctor home visits, nursing care, injections & IV fluids, wound dressing, elderly care and post-hospitalization care across all areas of Ahmedabad.">
+<meta name="theme-color" content="#0E4D3A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230E4D3A'/%3E%3Cpath d='M27 14h10v13h13v10H37v13H27V37H14V27h13z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-900:#0A3A2C;--green-800:#0E4D3A;--green-700:#14634A;--green-600:#1C7A5B;
+  --mint:#E7F4EE;--mint-2:#D3EBDF;--leaf:#7FC8A0;--gold:#C9A45C;
+  --ink:#10231C;--muted:#55665F;--rule:#DCE8E2;--paper:#FFFFFF;--soft:#F6FAF8;
+  --radius:18px;--shadow:0 20px 50px -24px rgba(10,58,44,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16.5px/1.65 "Manrope",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,3.6vw,2.7rem)}
+h3{font-size:1.2rem}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--green-600)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold)}
+.sec{padding:96px 0}
+.sec-head{max-width:640px;margin-bottom:48px}
+.sec-head h2{margin-top:12px}
+.sec-head p{color:var(--muted);margin:14px 0 0}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+.center .eyebrow::after{content:"";width:22px;height:2px;background:var(--gold)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font:inherit;font-weight:700;font-size:.98rem;text-decoration:none;cursor:pointer;border:1.5px solid transparent;transition:transform .15s ease,box-shadow .2s ease,background .2s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--green-800);color:#fff;box-shadow:0 10px 24px -12px rgba(14,77,58,.7)}
+.btn-primary:hover{background:var(--green-700)}
+.btn-gold{background:var(--gold);color:var(--green-900)}
+.btn-wa{background:#1FAF5A;color:#fff}
+.btn-wa:hover{background:#18994D}
+.btn-outline{border-color:var(--green-800);color:var(--green-800);background:#fff}
+.btn-outline:hover{background:var(--mint)}
+.btn-light{background:#fff;color:var(--green-800)}
+
+/* Header */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark{width:42px;height:42px;border-radius:12px;background:var(--green-800);display:grid;place-items:center;flex:none}
+.mark svg{width:24px;height:24px}
+.brand b{display:block;font-family:"Fraunces",serif;font-weight:600;font-size:1.22rem;color:var(--green-900);line-height:1.05}
+.brand small{display:block;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green-600);font-weight:700}
+.menu{display:flex;gap:26px;font-size:.93rem;font-weight:600}
+.menu a{text-decoration:none;color:var(--muted)}
+.menu a:hover{color:var(--green-800)}
+.top-cta{display:flex;gap:10px}
+.top-cta .btn{padding:10px 18px;font-size:.9rem}
+@media(max-width:980px){.menu{display:none}}
+@media(max-width:560px){.top-cta .hide-sm{display:none}}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(900px 500px at 85% 10%,rgba(127,200,160,.28),transparent 60%),
+  radial-gradient(700px 400px at 0% 100%,rgba(201,164,92,.12),transparent 60%),
+  linear-gradient(180deg,#F3FAF6 0%,#fff 100%)}
+.hero .wrap{display:grid;gap:56px;padding-top:80px;padding-bottom:96px;align-items:center}
+@media(min-width:960px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--mint-2);padding:7px 14px;border-radius:999px;font-size:.85rem;font-weight:600;color:var(--green-700)}
+.pill i{width:8px;height:8px;border-radius:50%;background:#1FAF5A;box-shadow:0 0 0 4px rgba(31,175,90,.18)}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);margin:22px 0 0;color:var(--green-900)}
+.hero h1 em{font-style:italic;color:var(--green-600)}
+.hero .tag{font-family:"Fraunces",serif;font-size:1.25rem;color:var(--green-700);margin:18px 0 0;font-style:italic}
+.hero .lead{color:var(--muted);font-size:1.08rem;max-width:52ch;margin:14px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.chips li{background:var(--mint);color:var(--green-800);font-weight:600;font-size:.88rem;padding:7px 14px;border-radius:999px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-cta .btn-primary{padding:16px 28px;font-size:1.02rem}
+.trust{display:flex;flex-wrap:wrap;gap:28px;margin-top:40px;padding-top:28px;border-top:1px solid var(--rule)}
+.trust div{font-size:.88rem;color:var(--muted)}
+.trust b{display:block;font-family:"Fraunces",serif;font-size:1.6rem;font-weight:500;color:var(--green-900)}
+
+.hero-card{position:relative;background:var(--green-800);color:#fff;border-radius:28px;padding:36px;box-shadow:var(--shadow);overflow:hidden}
+.hero-card::before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(127,200,160,.35),transparent 70%)}
+.hero-card::after{content:"";position:absolute;inset:auto -40px -120px auto;width:300px;height:300px;border-radius:50%;border:1px solid rgba(255,255,255,.12)}
+.hero-card h3{font-size:1.5rem;position:relative}
+.hero-card p{color:#CFE7DB;margin:8px 0 22px;position:relative}
+.hc-list{list-style:none;margin:0;padding:0;display:grid;gap:12px;position:relative}
+.hc-list li{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);padding:12px 14px;border-radius:14px;font-weight:600}
+.hc-list span{font-size:1.3rem;width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:rgba(255,255,255,.1)}
+.hc-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px;position:relative}
+.hc-actions .btn{padding:12px 10px}
+
+/* About */
+.about .wrap{display:grid;gap:48px;align-items:center}
+@media(min-width:900px){.about .wrap{grid-template-columns:1fr 1fr;gap:80px}}
+.about-visual{position:relative;border-radius:28px;background:linear-gradient(150deg,var(--mint) 0%,#fff 100%);border:1px solid var(--rule);padding:40px;min-height:360px;display:grid;place-items:center}
+.about-visual svg{width:min(320px,90%);height:auto}
+.badge{position:absolute;background:#fff;border:1px solid var(--rule);border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);font-size:.85rem;font-weight:600;display:flex;align-items:center;gap:10px}
+.badge.b1{left:-10px;bottom:28px}.badge.b2{right:-6px;top:26px}
+.badge em{font-style:normal;font-size:1.2rem}
+@media(max-width:560px){.badge.b1{left:10px}.badge.b2{right:10px}}
+.about p{color:var(--muted);margin:16px 0 0}
+.about .big{font-family:"Fraunces",serif;font-size:1.35rem;color:var(--ink);line-height:1.5}
+.ticks{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
+.ticks li::before{content:"";flex:none;width:22px;height:22px;margin-top:2px;border-radius:50%;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314634A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/13px no-repeat}
+
+/* Services */
+.services{background:var(--soft)}
+.grid-s{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.svc{background:#fff;border:1px solid var(--rule);border-radius:var(--radius);padding:28px 24px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;display:flex;flex-direction:column}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--mint-2)}
+.svc .ic{width:56px;height:56px;border-radius:16px;background:var(--mint);display:grid;place-items:center;font-size:1.7rem;margin-bottom:18px}
+.svc p{color:var(--muted);font-size:.95rem;margin:8px 0 18px;flex:1}
+.svc a{font-weight:700;font-size:.9rem;color:var(--green-700);text-decoration:none}
+.svc a:hover{text-decoration:underline}
+
+/* Why */
+.why{background:var(--green-900);color:#fff;position:relative;overflow:hidden}
+.why::before{content:"";position:absolute;left:-200px;top:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(127,200,160,.18),transparent 70%)}
+.why .eyebrow{color:var(--leaf)}
+.why .sec-head p{color:#B9D6C8}
+.grid-w{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));position:relative}
+.w{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);border-radius:var(--radius);padding:30px 26px}
+.w .n{font-family:"Fraunces",serif;font-size:.95rem;color:var(--gold)}
+.w h3{margin:14px 0 8px;font-size:1.3rem}
+.w p{color:#B9D6C8;margin:0;font-size:.95rem}
+
+/* Steps */
+.steps{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));counter-reset:s;position:relative}
+.st{position:relative;background:#fff;border:1px solid var(--rule);border-radius:var(--radius);padding:34px 28px}
+.st .num{width:54px;height:54px;border-radius:50%;background:var(--green-800);color:#fff;font-family:"Fraunces",serif;font-size:1.4rem;display:grid;place-items:center;margin-bottom:20px;box-shadow:0 0 0 8px var(--mint)}
+.st p{color:var(--muted);margin:8px 0 0}
+.st .arrow{position:absolute;right:-18px;top:56px;width:34px;height:34px;border-radius:50%;background:#fff;border:1px solid var(--rule);display:grid;place-items:center;color:var(--green-700);z-index:2;font-weight:700}
+@media(max-width:860px){.st .arrow{display:none}}
+
+/* Areas */
+.areas{background:linear-gradient(180deg,#fff 0%,var(--soft) 100%)}
+.areas .wrap{display:grid;gap:48px;align-items:center}
+@media(min-width:900px){.areas .wrap{grid-template-columns:.9fr 1.1fr;gap:72px}}
+.area-list{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.area-list li{background:#fff;border:1px solid var(--rule);padding:9px 16px;border-radius:999px;font-weight:600;font-size:.92rem;color:var(--green-800)}
+.area-list li.all{background:var(--green-800);color:#fff;border-color:var(--green-800)}
+.area-note{color:var(--muted);margin:22px 0 0;font-size:.95rem}
+
+/* Book */
+.book{background:var(--soft)}
+.book .wrap{display:grid;gap:40px;align-items:start}
+@media(min-width:960px){.book .wrap{grid-template-columns:.8fr 1.2fr;gap:64px}}
+.book-side p{color:var(--muted)}
+.contact-cards{display:grid;gap:12px;margin-top:28px}
+.cc{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--rule);border-radius:16px;padding:16px 18px;text-decoration:none;transition:border-color .2s ease,transform .15s ease}
+a.cc:hover{border-color:var(--leaf);transform:translateX(3px)}
+.cc .ci{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex:none;background:var(--mint);color:var(--green-800)}
+.cc .ci svg{width:22px;height:22px}
+.cc.wa .ci{background:#E3F7EA;color:#1FAF5A}
+.cc.ig .ci{background:#FCEBF3;color:#C13584}
+.cc small{display:block;color:var(--muted);font-size:.8rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.cc b{font-weight:700}
+
+.form-card{background:#fff;border:1px solid var(--rule);border-radius:26px;padding:clamp(24px,4vw,40px);box-shadow:var(--shadow)}
+.form-card h3{font-size:1.6rem}
+.form-card .hint{color:var(--muted);margin:6px 0 26px;font-size:.95rem}
+.fgrid{display:grid;gap:16px}
+@media(min-width:600px){.fgrid{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+label{display:block;font-weight:700;font-size:.88rem;margin-bottom:6px}
+label .req{color:var(--green-600)}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:var(--soft);border:1.5px solid var(--rule);border-radius:12px;padding:13px 14px;transition:border-color .2s ease,background .2s ease}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green-600);background:#fff;box-shadow:0 0 0 4px rgba(28,122,91,.12)}
+.err{display:block;color:#B23A2E;font-size:.82rem;font-weight:600;min-height:0;margin-top:4px}
+[aria-invalid="true"]{border-color:#B23A2E}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-foot{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-top:22px}
+.form-foot small{color:var(--muted);max-width:38ch}
+.form-foot .btn{padding:15px 28px}
+.ok{text-align:center;padding:20px 0}
+.ok .tick{width:72px;height:72px;margin:0 auto 18px;border-radius:50%;background:var(--mint);display:grid;place-items:center}
+.ok .tick svg{width:34px;height:34px}
+.ok p{color:var(--muted);max-width:44ch;margin:10px auto 22px}
+.ok .row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.fail{background:#FBEDEB;color:#7A2A21;border-radius:12px;padding:12px 14px;margin-top:16px;font-weight:600;font-size:.92rem}
+[hidden]{display:none!important}
+
+/* Social band */
+.band{background:linear-gradient(120deg,var(--green-800),var(--green-600));color:#fff;border-radius:28px;padding:clamp(32px,5vw,56px);display:grid;gap:28px;align-items:center;position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;right:-60px;bottom:-120px;width:340px;height:340px;border-radius:50%;border:1px solid rgba(255,255,255,.18)}
+@media(min-width:860px){.band{grid-template-columns:1.2fr .8fr}}
+.band h2{color:#fff}
+.band p{color:#D4EBDF;margin:12px 0 0}
+.band .acts{display:flex;flex-wrap:wrap;gap:12px;position:relative;z-index:1}
+.btn-ig{background:#fff;color:#A4286F}
+
+/* Footer */
+footer{background:var(--green-900);color:#B9D6C8;padding:56px 0 30px;margin-top:96px;font-size:.93rem}
+footer .wrap{display:grid;gap:32px}
+@media(min-width:820px){footer .wrap{grid-template-columns:1.4fr 1fr 1fr}}
+footer .brand b{color:#fff}
+footer .brand small{color:var(--leaf)}
+footer .mark{background:#fff}
+footer h4{color:#fff;font-family:"Fraunces",serif;font-weight:500;font-size:1.1rem;margin:0 0 12px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+.legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.84rem}
+
+/* Floating buttons */
+.float{position:fixed;right:18px;bottom:96px;z-index:60;display:grid;gap:12px}
+.float a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 26px -10px rgba(0,0,0,.45);transition:transform .15s ease}
+.float a:hover{transform:scale(1.06)}
+.float svg{width:28px;height:28px}
+.f-wa{background:#1FAF5A;color:#fff}
+.f-call{background:var(--green-800);color:#fff}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.svc,.float a{transition:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.64.8-.79.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.34-2.92c-.25-.43.25-.4.72-1.34.08-.16.04-.3-.02-.42-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48a.92.92 0 0 0-.67.31 2.8 2.8 0 0 0-.87 2.08 4.9 4.9 0 0 0 1.02 2.58 11.1 11.1 0 0 0 4.27 3.77c1.6.69 2.2.75 3 .63.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3.05 0-4.1.06-1.07.05-1.8.22-2.43.46a4.9 4.9 0 0 0-1.77 1.15A4.9 4.9 0 0 0 2.53 5.4c-.25.64-.42 1.37-.47 2.43C2 8.9 2 9.25 2 12s0 3.1.06 4.17c.05 1.06.22 1.79.47 2.43.25.66.6 1.22 1.15 1.77.55.55 1.11.9 1.77 1.15.64.25 1.37.42 2.43.47C8.95 22 9.3 22 12 22s3.05 0 4.12-.06c1.06-.05 1.79-.22 2.43-.47a4.9 4.9 0 0 0 1.77-1.15c.55-.55.9-1.11 1.15-1.77.25-.64.42-1.37.47-2.43.05-1.07.06-1.42.06-4.12s0-3.05-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.15-1.77 4.9 4.9 0 0 0-1.77-1.15c-.64-.24-1.37-.41-2.43-.46C15.05 2 14.7 2 12 2zm0 1.8c2.67 0 2.98 0 4.04.06.97.04 1.5.2 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.14.35.3.88.34 1.86.05 1.05.06 1.37.06 4.04s0 2.98-.06 4.04c-.04.97-.2 1.5-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.14-.89.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.98 0-4.04-.06c-.97-.04-1.5-.2-1.86-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.14-.35-.3-.89-.34-1.86C3.81 14.98 3.8 14.67 3.8 12s0-2.98.06-4.04c.04-.97.2-1.5.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.14.89-.3 1.86-.34C9.02 3.81 9.33 3.8 12 3.8z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+  <symbol id="i-cross" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 3h5v6.5H21v5h-6.5V21h-5v-6.5H3v-5h6.5z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Geeta Home Care – home">
+      <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cross" style="color:#fff"/></svg></span>
+      <span><b>Geeta Home Care</b><small>Ahmedabad</small></span>
+    </a>
+    <nav class="menu" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#how">How It Works</a>
+      <a href="#areas">Areas</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="top-cta">
+      <a class="btn btn-outline hide-sm" href="tel:+919426272622"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+      <a class="btn btn-primary" href="#book">Book a Visit</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- 1. HOME / HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="pill"><i></i>Ahmedabad – All Areas</span>
+      <h1>🌿 Geeta <em>Home Care</em></h1>
+      <p class="tag">“Professional Healthcare at Your Doorstep”</p>
+      <p class="lead">Qualified doctors and trained nurses who come to your home, so your family gets proper care without the hospital queue.</p>
+      <ul class="chips" aria-label="What we offer">
+        <li>Doctor Visit</li><li>Nursing Care</li><li>Home Healthcare</li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#book">Book a Home Visit →</a>
+        <a class="btn btn-wa" href="https://wa.me/919426272622?text=Hello%20Geeta%20Home%20Care%2C%20I%20would%20like%20to%20book%20a%20home%20visit." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+        <a class="btn btn-outline" href="tel:+919426272622"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
+      </div>
+      <div class="trust">
+        <div><b>8+</b>Home services</div>
+        <div><b>All areas</b>Across Ahmedabad</div>
+        <div><b>At home</b>Care for the whole family</div>
+      </div>
+    </div>
+
+    <aside class="hero-card reveal" aria-label="Quick booking">
+      <h3>Care that comes to you</h3>
+      <p>Choose a service, share your address, and we arrange the visit.</p>
+      <ul class="hc-list">
+        <li><span>👨‍⚕️</span>Doctor Home Visit</li>
+        <li><span>💉</span>Injection / IV Fluids</li>
+        <li><span>👩‍⚕️</span>Nursing Care</li>
+        <li><span>👴</span>Elderly Care</li>
+      </ul>
+      <div class="hc-actions">
+        <a class="btn btn-gold" href="#book">Book Visit</a>
+        <a class="btn btn-light" href="tel:+919426272622"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section class="sec about" id="about">
+  <div class="wrap">
+    <div class="about-visual reveal">
+      <svg viewBox="0 0 320 260" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#1C7A5B"/><stop offset="1" stop-color="#0E4D3A"/></linearGradient></defs>
+        <path d="M40 130 160 40l120 90" fill="none" stroke="#0E4D3A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="70" y="120" width="180" height="120" rx="14" fill="url(#g1)"/>
+        <rect x="136" y="150" width="48" height="48" rx="10" fill="#fff"/>
+        <path d="M153 158h14v13h13v14h-13v13h-14v-13h-13v-14h13z" fill="#1C7A5B"/>
+        <path d="M250 60c-30 8-46 34-40 62 26-4 46-30 40-62z" fill="#7FC8A0"/>
+        <path d="M212 120c10-18 22-32 36-44" stroke="#0E4D3A" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="62" cy="64" r="8" fill="#C9A45C"/>
+      </svg>
+      <div class="badge b1"><em>🩺</em>Trained medical staff</div>
+      <div class="badge b2"><em>🏠</em>Care at home</div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">About Us</span>
+      <h2 style="margin-top:12px">About Geeta Home Care</h2>
+      <p class="big">Geeta Home Care is a home healthcare service focused on providing reliable and professional medical care at the comfort of your home.</p>
+      <p>From a quick doctor visit to daily nursing after a hospital stay, our team brings clinical care to your home with the same standards as Geeta Clinic. Patients recover where they are most comfortable, and families stay close throughout.</p>
+      <ul class="ticks">
+        <li>Doctors and nurses who know home care</li>
+        <li>Visits planned around your family’s schedule</li>
+        <li>Service across all areas of Ahmedabad</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section class="sec services" id="services">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Our Services</span>
+      <h2>Complete healthcare, delivered home</h2>
+      <p>Medical and nursing services for every stage of care, from routine checks to recovery after a hospital stay.</p>
+    </div>
+    <div class="grid-s">
+      <article class="svc reveal"><div class="ic">👨‍⚕️</div><h3>Doctor Home Visit</h3><p>A qualified doctor examines, diagnoses and advises at your home.</p><a href="#book" data-service="Doctor Home Visit">Book this →</a></article>
+      <article class="svc reveal"><div class="ic">💉</div><h3>Injection / IV / IV Fluids</h3><p>Prescribed injections, IV lines and IV fluids given safely by trained staff.</p><a href="#book" data-service="Injection / IV / IV Fluids">Book this →</a></article>
+      <article class="svc reveal"><div class="ic">🩺</div><h3>BP &amp; Sugar Monitoring</h3><p>Regular blood pressure and blood sugar checks, with readings recorded for your doctor.</p><a href="#book" data-service="BP & Sugar Monitoring">Book this →</a></article>
+      <article class="svc reveal"><div class="ic">👩‍⚕️</div><h3>Nursing Care</h3><p>Skilled nurses for medication, vitals, catheter and feeding care, and daily support.</p><a href="#book" data-service="Nursing Care">Book this →</a></article>
+      <article class="svc reveal"><div class="ic">🧴</div><h3>Wound Dressing</h3><p>Clean, sterile dressing for surgical wounds, injuries, ulcers and bedsores.</p><a href="#book" data-service="Wound Dressing">Book this →</a></article>
+      <article class="svc reveal"><div class="ic">🏥</div><h3>Post-Hospitalization Care</h3><p>Ongoing care after discharge so recovery continues smoothly at home.</p><a href="#book" data-service="Post-Hospitalization Care">Book this →</a></article>
+      <article class="svc reveal"><div class="ic">👴</div><h3>Elderly Care</h3><p>Patient, respectful care for seniors: health checks, mobility help and company.</p><a href="#book" data-service="Elderly Care">Book this →</a></article>
+      <article class="svc reveal"><div class="ic">🛏️</div><h3>Patient Attendant / Home Care</h3><p>Trained attendants for bedridden patients, for day shifts, night shifts or 24 hours.</p><a href="#book" data-service="Patient Attendant / Home Care">Book this →</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. WHY CHOOSE US -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why Geeta Home Care</span>
+      <h2>Why families choose us</h2>
+      <p>Care you can rely on, from people who treat your home with respect.</p>
+    </div>
+    <div class="grid-w">
+      <div class="w reveal"><span class="n">01</span><h3>Trusted healthcare at home</h3><p>Reliable medical care without travel, waiting rooms or extra stress for the patient.</p></div>
+      <div class="w reveal"><span class="n">02</span><h3>Professional staff</h3><p>Qualified doctors, nurses and attendants who follow proper clinical practice.</p></div>
+      <div class="w reveal"><span class="n">03</span><h3>Convenient &amp; personalised care</h3><p>Visits scheduled around you, with care planned for each patient’s needs.</p></div>
+      <div class="w reveal"><span class="n">04</span><h3>Ahmedabad-wide service</h3><p>Wherever you live in Ahmedabad, our team can reach you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. HOW IT WORKS -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">How It Works</span>
+      <h2>Home care in three steps</h2>
+      <p>Book → Confirm → Care at Home</p>
+    </div>
+    <div class="steps">
+      <div class="st reveal"><div class="num">1</div><h3>Book</h3><p>Fill in the booking form, send us a WhatsApp message or call. Tell us the service you need and your area.</p><span class="arrow" aria-hidden="true">→</span></div>
+      <div class="st reveal"><div class="num">2</div><h3>Confirm</h3><p>Our team calls you back to understand the patient’s needs and confirm a convenient visit time.</p><span class="arrow" aria-hidden="true">→</span></div>
+      <div class="st reveal"><div class="num">3</div><h3>Care at Home</h3><p>A doctor, nurse or attendant arrives at your door and provides professional care.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. SERVICE AREAS -->
+<section class="sec areas" id="areas">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Service Areas</span>
+      <h2 style="margin-top:12px">Ahmedabad – All Areas</h2>
+      <p style="color:var(--muted);margin:14px 0 0">We visit homes across the city, in the east, west, north and south. If you’re in Ahmedabad, we can come to you.</p>
+      <div class="hero-cta"><a class="btn btn-primary" href="#book">Check availability →</a></div>
+    </div>
+    <div class="reveal">
+      <ul class="area-list">
+        <li class="all">📍 All of Ahmedabad</li>
+        <li>Satellite</li><li>Bopal</li><li>Prahlad Nagar</li><li>Vastrapur</li><li>Navrangpura</li>
+        <li>Maninagar</li><li>Naranpura</li><li>Thaltej</li><li>Gota</li><li>Chandkheda</li>
+        <li>Nikol</li><li>Naroda</li><li>Vastral</li><li>Paldi</li><li>Ghatlodia</li>
+        <li>Sabarmati</li><li>Bapunagar</li><li>Shela</li><li>South Bopal</li><li>&amp; more</li>
+      </ul>
+      <p class="area-note">Don’t see your area? Call or WhatsApp us. We cover all of Ahmedabad.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 + 8. CONTACT & BOOKING FORM -->
+<section class="sec book" id="book">
+  <div class="wrap">
+    <div class="book-side reveal" id="contact">
+      <span class="eyebrow">Contact Us</span>
+      <h2 style="margin-top:12px">Book a Home Visit</h2>
+      <p>Send us your details and our team will call you back to confirm the visit. For urgent requests, call or WhatsApp us directly.</p>
+      <div class="contact-cards">
+        <div class="cc"><span class="ci"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><span><small>Location</small><b>📍 Ahmedabad – All Areas</b></span></div>
+        <a class="cc" href="tel:+919426272622"><span class="ci"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span><small>📞 Call Now</small><b>+91 94262 72622</b></span></a>
+        <a class="cc wa" href="https://wa.me/919426272622?text=Hello%20Geeta%20Home%20Care%2C%20I%20would%20like%20to%20book%20a%20home%20visit." target="_blank" rel="noopener"><span class="ci"><svg aria-hidden="true"><use href="#i-wa"/></svg></span><span><small>💬 WhatsApp Now</small><b>+91 94262 72622</b></span></a>
+        <a class="cc ig" href="https://www.instagram.com/GeetaHomeCare" target="_blank" rel="noopener"><span class="ci"><svg aria-hidden="true"><use href="#i-ig"/></svg></span><span><small>📲 Instagram</small><b>@GeetaHomeCare</b></span></a>
+      </div>
+    </div>
+
+    <div class="form-card reveal">
+      <form id="bookform" name="home-visit" method="POST" action="/thank-you" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="home-visit">
+        <input type="hidden" name="subject" value="New home visit request – Geeta Home Care">
+        <p class="hp"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <h3>Request a home visit</h3>
+        <p class="hint">Fields marked <span style="color:var(--green-600)">*</span> are required. We usually call back within a few hours.</p>
+        <div class="fgrid">
+          <div><label for="f-name">Patient / contact name <span class="req">*</span></label><input id="f-name" name="name" autocomplete="name" required><span class="err" data-err="name"></span></div>
+          <div><label for="f-phone">Phone number <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91" required><span class="err" data-err="phone"></span></div>
+          <div><label for="f-service">Service needed <span class="req">*</span></label>
+            <select id="f-service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Doctor Home Visit</option>
+              <option>Injection / IV / IV Fluids</option>
+              <option>BP &amp; Sugar Monitoring</option>
+              <option>Nursing Care</option>
+              <option>Wound Dressing</option>
+              <option>Post-Hospitalization Care</option>
+              <option>Elderly Care</option>
+              <option>Patient Attendant / Home Care</option>
+              <option>Other / Not sure</option>
+            </select><span class="err" data-err="service"></span></div>
+          <div><label for="f-area">Area in Ahmedabad <span class="req">*</span></label><input id="f-area" name="area" placeholder="e.g. Satellite, Maninagar" required><span class="err" data-err="area"></span></div>
+          <div><label for="f-date">Preferred date</label><input id="f-date" name="date" type="date"></div>
+          <div><label for="f-time">Preferred time</label>
+            <select id="f-time" name="time">
+              <option value="">Any time</option>
+              <option>Morning (8am – 12pm)</option>
+              <option>Afternoon (12pm – 4pm)</option>
+              <option>Evening (4pm – 8pm)</option>
+              <option>As soon as possible</option>
+            </select></div>
+          <div class="full"><label for="f-address">Full address</label><input id="f-address" name="address" autocomplete="street-address" placeholder="House / flat, society, landmark"></div>
+          <div class="full"><label for="f-msg">Patient details / notes</label><textarea id="f-msg" name="message" placeholder="Age, condition, prescription details, anything we should know"></textarea></div>
+        </div>
+        <div class="form-foot">
+          <small>Your details are only used to arrange your visit. This form is not for emergencies. In an emergency, call 108.</small>
+          <button class="btn btn-primary" type="submit" id="submitBtn">Book a Home Visit</button>
+        </div>
+        <div class="fail" id="formFail" role="alert" hidden>We couldn’t send your request. Please try again, or call or WhatsApp us at +91 94262 72622.</div>
+      </form>
+
+      <div class="ok" id="formOk" hidden tabindex="-1">
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#14634A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
+        <h3>Request received</h3>
+        <p>Thank you. Our team will call you shortly to confirm your home visit. For a faster reply, send us your request on WhatsApp too.</p>
+        <div class="row">
+          <a class="btn btn-wa" id="okWa" href="https://wa.me/919426272622" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Send on WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+919426272622"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. INSTAGRAM + WHATSAPP -->
+<section style="padding:0" aria-label="Follow and message us">
+  <div class="wrap">
+    <div class="band reveal">
+      <div>
+        <h2>Stay connected with Geeta Home Care</h2>
+        <p>Follow us on Instagram for health tips and updates, or message us on WhatsApp to book a visit.</p>
+      </div>
+      <div class="acts">
+        <a class="btn btn-ig" href="https://www.instagram.com/GeetaHomeCare" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ig"/></svg>@GeetaHomeCare</a>
+        <a class="btn btn-wa" href="https://wa.me/919426272622?text=Hello%20Geeta%20Home%20Care%2C%20I%20would%20like%20to%20book%20a%20home%20visit." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#home">
+        <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cross" style="color:#0E4D3A"/></svg></span>
+        <span><b>Geeta Home Care</b><small>Ahmedabad</small></span>
+      </a>
+      <p style="margin:16px 0 0;max-width:40ch">Professional healthcare at your doorstep. Doctor visits, nursing and home healthcare across Ahmedabad.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul><li><a href="#services">Doctor Home Visit</a></li><li><a href="#services">Nursing Care</a></li><li><a href="#services">Injection / IV</a></li><li><a href="#services">Elderly Care</a></li></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>📍 Ahmedabad – All Areas</li>
+        <li><a href="tel:+919426272622">📞 +91 94262 72622</a></li>
+        <li><a href="https://wa.me/919426272622" target="_blank" rel="noopener">💬 WhatsApp Now</a></li>
+        <li><a href="https://www.instagram.com/GeetaHomeCare" target="_blank" rel="noopener">📲 @GeetaHomeCare</a></li>
+      </ul>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Geeta Home Care. All rights reserved.</span><span>For medical emergencies, call 108.</span></div>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="f-call" href="tel:+919426272622" aria-label="Call Geeta Home Care"><svg aria-hidden="true"><use href="#i-phone"/></svg></a>
+  <a class="f-wa" href="https://wa.me/919426272622?text=Hello%20Geeta%20Home%20Care%2C%20I%20would%20like%20to%20book%20a%20home%20visit." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+</div>
+
+<script>
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+// Pre-select service from "Book this" links
+document.querySelectorAll("[data-service]").forEach(a => a.addEventListener("click", () => {
+  document.getElementById("f-service").value = a.dataset.service;
+}));
+
+// Min date = today
+const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+document.getElementById("f-date").min = d.toISOString().slice(0, 10);
+
+// Reveal on scroll
+const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+}), { threshold: .12 }) : null;
+document.querySelectorAll(".reveal").forEach(el => io ? io.observe(el) : el.classList.add("in"));
+
+// Booking form (Netlify Forms via AJAX)
+const form = document.getElementById("bookform");
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const v = Object.fromEntries(new FormData(form));
+  let first = null;
+  const check = (n, msg) => {
+    const el = form.elements[n];
+    form.querySelector(`[data-err="${n}"]`).textContent = msg;
+    el.setAttribute("aria-invalid", msg ? "true" : "false");
+    if (msg && !first) first = el;
+  };
+  check("name", v.name.trim() ? "" : "Please enter a name.");
+  check("phone", v.phone.replace(/\D/g, "").length >= 10 ? "" : "Enter a phone number with at least 10 digits.");
+  check("service", v.service ? "" : "Please choose a service.");
+  check("area", v.area.trim() ? "" : "Please enter your area.");
+  if (first) { first.focus(); return; }
+
+  const btn = document.getElementById("submitBtn");
+  btn.disabled = true; btn.textContent = "Sending…";
+  document.getElementById("formFail").hidden = true;
+  try {
+    const res = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
+    });
+    if (!res.ok) throw new Error(res.status);
+    const msg = `Hello Geeta Home Care, I'd like to book a home visit.\nName: ${v.name}\nPhone: ${v.phone}\nService: ${v.service}\nArea: ${v.area}` +
+      (v.date ? `\nDate: ${v.date}` : "") + (v.time ? `\nTime: ${v.time}` : "");
+    document.getElementById("okWa").href = "https://wa.me/919426272622?text=" + encodeURIComponent(msg);
+    form.hidden = true;
+    const ok = document.getElementById("formOk");
+    ok.hidden = false; ok.focus();
+  } catch {
+    document.getElementById("formFail").hidden = false;
+  } finally {
+    btn.disabled = false; btn.textContent = "Book a Home Visit";
+  }
+});
+</script>
+</body>
+</html>
